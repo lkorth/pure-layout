@@ -143,6 +143,11 @@ article h1 a {
   background: #1f8dd6;
 }
 
+.pure-menu.navigation li a:hover {
+  text-decoration: underline;
+  background: none;
+}
+
 .pure-menu.navigation .pure-menu-heading {
   color: #eee;
 }
