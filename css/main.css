@@ -97,6 +97,40 @@ article h1 a {
   outline: 0;
 }
 
+.paging {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.paging a {
+  text-decoration: none;
+}
+
+.paging .archives {
+  display: inline-block;
+}
+
+.paging .archives:before {
+  content: '\2014';
+  padding: 0.3em;
+}
+
+.paging .archives:after {
+  content: '\2014';
+  padding: 0.3em;
+}
+
+.left {
+  float: left;
+  padding-left: 2em;
+}
+
+.right {
+  float: right;
+  padding-right: 2em;
+}
+
 /* Navigation */
 
 .navigation {
