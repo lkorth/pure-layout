@@ -166,3 +166,9 @@ article h1 a {
     float: right;
   }
 }
+
+@media (max-width: 48em) {
+  .sidebar {
+    margin-top: 0;
+  }
+}
