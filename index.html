@@ -1,16 +1,6 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="css/pure-base.css">
-    <link rel="stylesheet" href="css/pure-grids.css">
-    <link rel="stylesheet" href="css/pure-grids-responsive.css">
-    <link rel="stylesheet" href="css/pure-buttons.css">
-    <link rel="stylesheet" href="css/pure-menus.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+---
+layout: index
+---
   <body>
     <div class="pure-g">
       <div class="pure-u-1 pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed navigation">
@@ -23,43 +13,9 @@
       </div>
 
       <div class="pure-u-1 pure-u-md-3-4 grid-padding">
-        <div class="card">
-          <img src="http://placehold.it/800x300" />
-          <article>
-            <h1><a href="#">Blog Post Title</a></h1>
-            <div class="article-meta">
-              <h4>Feburary 12th, 2014</h4>
-              <h4><a href="#">Category</a>, <a href="#">Website</a></h4>
-              <h4><a href="">2 Comments</a></h4>
-            </div>
-            <p>Meggings hella stumptown, post-ironic sapiente cliche viral. Dolore cliche banjo, bespoke Marfa twee umami. Cardigan whatever organic, fugiat master cleanse mollit shabby chic Bushwick laborum. Keffiyeh narwhal dolore Tumblr. Mumblecore enim gastropub, keytar locavore fanny pack biodiesel plaid cardigan. Id yr American Apparel Etsy freegan butcher, viral lo-fi cred literally direct trade Neutra tilde duis. Artisan blog tattooed, irure YOLO ethical swag bicycle rights eiusmod.</p>
-            <a class="read-more" href="#">Read More</a>
-          </article>
-        </div>
-
-        <div class="card">
-          <article>
-            <h1><a href="#">Other Blog Post</a></h1>
-            <div class="article-meta">
-              <h4>Feburary 10th, 2014</h4>
-              <h4><a href="#">Category</a></h4>
-              <h4><a href="">1 Comment</a></h4>
-            </div>
-            <p>Meggings hella stumptown, post-ironic sapiente cliche viral. Dolore cliche banjo, bespoke Marfa twee umami. Cardigan whatever organic, fugiat master cleanse mollit shabby chic Bushwick laborum. Keffiyeh narwhal dolore Tumblr. Mumblecore enim gastropub, keytar locavore fanny pack biodiesel plaid cardigan. Id yr American Apparel Etsy freegan butcher, viral lo-fi cred literally direct trade Neutra tilde duis. Artisan blog tattooed, irure YOLO ethical swag bicycle rights eiusmod.</p>
-          </article>
-        </div>
-
-        <div class="card">
-          <article>
-            <h1><a href="#">Blog Post 3</a></h1>
-            <div class="article-meta">
-              <h4>December 10th, 2013</h4>
-              <h4><a href="#">Social</a></h4>
-              <h4><a href="">0 Comments</a></h4>
-            </div>
-            <p>Meggings hella stumptown, post-ironic sapiente cliche viral. Dolore cliche banjo, bespoke Marfa twee umami. Cardigan whatever organic, fugiat master cleanse mollit shabby chic Bushwick laborum. Keffiyeh narwhal dolore Tumblr. Mumblecore enim gastropub, keytar locavore fanny pack biodiesel plaid cardigan. Id yr American Apparel Etsy freegan butcher, viral lo-fi cred literally direct trade Neutra tilde duis. Artisan blog tattooed, irure YOLO ethical swag bicycle rights eiusmod.</p>
-          </article>
-        </div>
+        {% for post in site.posts %}
+          {% include post_preview.html %}
+        {% endfor %}
 
         <div class="paging">
           <a class="left" href="#">← Newer</a>
