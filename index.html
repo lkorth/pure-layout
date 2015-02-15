@@ -1,47 +1,15 @@
 ---
-layout: index
+layout: default
 ---
-  <body>
-    <div class="pure-g">
-      <div class="pure-u-1 pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed navigation">
-        <a href="#" class="pure-menu-heading">Site Title</a>
-        <ul>
-          <li class="pure-menu-selected"><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+<div class="pure-u-1 pure-u-md-3-4 grid-padding">
+  {% for post in site.posts %}
+  {% include post_preview.html %}
+  {% endfor %}
 
-      <div class="pure-u-1 pure-u-md-3-4 grid-padding">
-        {% for post in site.posts %}
-          {% include post_preview.html %}
-        {% endfor %}
+  <div class="paging">
+    <a class="left" href="#">← Newer</a>
+    <a class="archives" href="#">Blog Archives</a>
+    <a class="right" href="#">Older →</a>
+  </div>
+</div>
 
-        <div class="paging">
-          <a class="left" href="#">← Newer</a>
-          <a class="archives" href="#">Blog Archives</a>
-          <a class="right" href="#">Older →</a>
-        </div>
-      </div>
-
-      <div class="pure-u-1 pure-u-md-1-4 grid-padding sidebar">
-        <div class="card">
-          <div class="search">
-            <form>
-              <input type="text" placeholder="Search" />
-            </form>
-          </div>
-        </div>
-
-        <div class="card sidebar">
-          <h3>Recent Posts</h3>
-          <div class="details">
-            <a href="#">Blog Post Title</a>
-            <a href="#">Other Blog Post</a>
-            <a href="#">Blog Post 3</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>

@@ -1,6 +1,7 @@
 ---
 title: Blog Post Three
 date: 2015-01-05
+layout: post
 ---
 Sartorial synth Neutra, distillery cred direct trade sustainable keffiyeh wayfarers. VHS chambray
 Thundercats street art, disrupt tattooed lomo twee. Pug 90's Tumblr, wayfarers sartorial cronut

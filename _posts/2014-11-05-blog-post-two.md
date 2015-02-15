@@ -1,6 +1,7 @@
 ---
 title: Blog Post Two
 date: 2014-11-05
+layout: post
 ---
 Literally locavore Wes Anderson, 8-bit tousled whatever next level Odd Future YOLO photo booth roof
 party. Master cleanse pug High Life, sustainable photo booth roof party sriracha narwhal Bushwick
