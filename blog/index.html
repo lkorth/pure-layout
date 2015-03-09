@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="pure-u-1 pure-u-md-3-4 grid-padding">
+  {% for post in paginator.posts %}
+  {% include post_preview.html %}
+  {% endfor %}
+
+  <div class="paging">
+    {% if paginator.previous_page %}
+    <a class="left" href="/blog/{% if paginator.previous_page != 1 %}{{ paginator.previous_page }}/{% endif %}">← Newer</a>
+    {% endif %}
+    <a class="archives" href="/blog/archives/">Blog Archives</a>
+    {% if paginator.next_page %}
+    <a class="right" href="/blog/{{ paginator.next_page }}/">Older →</a>
+    {% endif %}
+  </div>
+</div>
+

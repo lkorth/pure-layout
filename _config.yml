@@ -1,0 +1,3 @@
+permalink: /blog/:title/  # Path structure for post permalinks
+paginate: 3               # Posts per page on the blog index
+paginate_path: blog/:num  # Path structure for pagination URLs eg. /blog/2/
