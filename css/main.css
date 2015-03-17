@@ -159,6 +159,10 @@ article h1 a {
   color: #eee;
 }
 
+.pure-menu.navigation .pure-menu-selected a {
+  color: #eee;
+}
+
 .pure-menu.navigation li a {
   color: #2d3e50;
 }

@@ -1,8 +1,8 @@
 <div class="pure-u-1 pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed navigation">
   <a href="{{ site.root }}/" class="pure-menu-heading">{{ site.title }}</a>
   <ul>
-    <li class="pure-menu-selected"><a href="/blog/">Blog</a></li>
-    <li><a href="/about/">About</a></li>
+    <li {% if page.navigation == "blog" %}class="pure-menu-selected"{% endif %}><a href="/blog/">Blog</a></li>
+    <li {% if page.navigation == "about" %}class="pure-menu-selected"{% endif %}><a href="/about/">About</a></li>
     <li><a href="mailto:{{ site.email }}">Contact</a></li>
   </ul>
 </div>
