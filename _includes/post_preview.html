@@ -5,7 +5,7 @@
   <article>
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     <div class="article-meta">
-      <h4>{{ post.date }}</h4>
+      <h4><time datetime="{{ post.date }}">{{ post.date_text }}</time></h4>
       <h4><a href="#">Category</a>, <a href="#">Website</a></h4>
       <h4><a href="">2 Comments</a></h4>
     </div>
