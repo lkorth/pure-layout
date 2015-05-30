@@ -1,15 +1,19 @@
 <div class="card">
-  {% if post.header_image %}
-  <img src="{{ post.header_image }}" />
-  {% endif %}
   <article>
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <div class="article-meta">
-      <h4><time datetime="{{ post.date }}">{{ post.date_text }}</time></h4>
-      <h4><a href="#">Category</a>, <a href="#">Website</a></h4>
-      <h4><a href="">2 Comments</a></h4>
+    {% if post.header_image %}
+    <img src="{{ post.header_image }}" />
+    {% endif %}
+    <div class="content">
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="article-meta">
+        <h4><time datetime="{{ post.date }}">{{ post.date_text }}</time></h4>
+        <h4><a href="#">Category</a>, <a href="#">Website</a></h4>
+        <h4><a href="">2 Comments</a></h4>
+      </div>
+      <p>{{ post.content }}</p>
     </div>
-    <p>{{ post.content }}</p>
-    <a class="read-more" href="{{ post.url }}">Read More</a>
+    <div class="links">
+      <a class="read-more" href="{{ post.url }}">Read More</a>
+    </div>
   </article>
 </div>

@@ -3,17 +3,19 @@ layout: default
 ---
 <div class="pure-u-1 pure-u-md-3-4 grid-padding">
   <div class="card">
-    {% if page.header_image %}
-    <img src="{{ page.header_image }}" />
-    {% endif %}
     <article>
-      <h1>{{ page.title }}</h1>
-      <div class="article-meta">
-        <h4><time datetime="{{ page.date }}">{{ page.date_text }}</time></h4>
-        <h4><a href="#">Category</a>, <a href="#">Website</a></h4>
-        <h4><a href="">2 Comments</a></h4>
+      {% if page.header_image %}
+      <img src="{{ page.header_image }}" />
+      {% endif %}
+      <div class="content">
+        <h1>{{ page.title }}</h1>
+        <div class="article-meta">
+          <h4><time datetime="{{ page.date }}">{{ page.date_text }}</time></h4>
+          <h4><a href="#">Category</a>, <a href="#">Website</a></h4>
+          <h4><a href="">2 Comments</a></h4>
+        </div>
+        <p>{{ content }}</p>
       </div>
-      <p>{{ content }}</p>
     </article>
   </div>
 </div>
