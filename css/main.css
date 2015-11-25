@@ -31,7 +31,7 @@ img {
 
 .grid-padding {
   padding: 1em;
-  margin-top: 4em;
+  margin-top: 6em;
 }
 
 .card {
@@ -160,9 +160,12 @@ article h1 a {
 /* Navigation */
 
 .navigation {
+  height: 5em;
   padding: 0.5em;
   text-align: center;
   box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+  display: flex;
+  align-items: center;
 }
 
 .pure-menu.navigation {
@@ -186,24 +189,36 @@ article h1 a {
   color: #2d3e50;
 }
 
+.pure-menu.navigation a {
+  padding: 0.25em 1.25em;
+  align-self: center;
+}
+
+.navigation ul {
+  padding: 0.25em 1.25em;
+  margin-left: auto;
+}
+
 /* Media Queries */
 
 @media (min-width: 48em) {
   body {
     font-size: 16px;
   }
-
-  .navigation {
-    text-align: left;
-  }
-
-  .navigation ul {
-    float: right;
-  }
 }
 
 @media (max-width: 48em) {
   .sidebar {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 30em) {
+  .pure-menu.navigation a {
+    padding: 0.25em 0.75em;
+  }
+
+  .navigation ul {
+    padding: 0.25em 0.75em;
   }
 }
